@@ -4,47 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "2c373473300ba27d",
+        "id": "6f10fa60ebd1e446",
         "type": "tabs",
         "children": [
           {
-            "id": "584214103260bf38",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Theory of Language & Automata/Week 1/Pengantar.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "7ab008d14157fd0a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Design & Analysis of Algorithms/Week 1/What are algorithms?.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "15c41d480c28286e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Design & Analysis of Algorithms/Week 1/Exercise 1 (Past).md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "086715f3eb329f16",
+            "id": "dee047bf1c3030b3",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -56,15 +20,31 @@
             }
           },
           {
-            "id": "f869b3621fa125f2",
+            "id": "253271b646c967df",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Design & Analysis of Algorithms/Textbook/Part 2. Getting started (Exercise).md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "4be3d2398445124e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Design & Analysis of Algorithms/Textbook/Part 2. Getting started (Exercise).md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -141,7 +121,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Design & Analysis of Algorithms/Textbook/Part 1. Foundation (Exercise).md"
+                "file": "Design & Analysis of Algorithms/Textbook/Part 2. Getting started (Exercise).md"
               }
             }
           },
@@ -167,7 +147,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Design & Analysis of Algorithms/Textbook/Part 1. Foundation (Exercise).md",
+                "file": "Design & Analysis of Algorithms/Textbook/Part 2. Getting started (Exercise).md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -184,10 +164,18 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Design & Analysis of Algorithms/Textbook/Part 1. Foundation (Exercise).md",
+                "file": "Design & Analysis of Algorithms/Textbook/Part 2. Getting started (Exercise).md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
+            }
+          },
+          {
+            "id": "96b1ac1a02b39a20",
+            "type": "leaf",
+            "state": {
+              "type": "advanced-tables-toolbar",
+              "state": {}
             }
           }
         ],
@@ -206,16 +194,22 @@
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
       "obsidian-day-planner:Timeline": false,
-      "templater-obsidian:Templater": false
+      "templater-obsidian:Templater": false,
+      "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "086715f3eb329f16",
+  "active": "4be3d2398445124e",
   "lastOpenFiles": [
-    "Design & Analysis of Algorithms/Week 1/Exercise 1 (Past).md",
     "Design & Analysis of Algorithms/Textbook/Part 1. Foundation (Exercise).md",
-    "Design & Analysis of Algorithms/Textbook",
-    "Design & Analysis of Algorithms/Week 1/What are algorithms?.md",
+    "Design & Analysis of Algorithms/Textbook/Part 2. Getting started (Exercise).md",
+    "Design & Analysis of Algorithms/Textbook/Part 2. Loop invariants.md",
+    "Design & Analysis of Algorithms/Week 1/Exercise 1 (Past).md",
     "Theory of Language & Automata/Week 1/Pengantar.md",
+    "Design & Analysis of Algorithms/Week 1/What are algorithms?.md",
+    "Advanced Programming",
+    "Human Computer Interaction",
+    "Artificial Intelligence and Basic Data Science",
+    "Design & Analysis of Algorithms/Textbook",
     "Design & Analysis of Algorithms/Week 1",
     "Design & Analysis of Algorithms",
     "Theory of Language & Automata/Week 1",
