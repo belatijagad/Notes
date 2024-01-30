@@ -8,25 +8,13 @@
         "type": "tabs",
         "children": [
           {
-            "id": "29604c13f9af3a6b",
+            "id": "10fce261b61386ed",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
                 "file": "Design & Analysis of Algorithms/Textbook/Part 2. Getting started (Exercise).md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "a12422845b6bbded",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "tes.md",
-                "mode": "source",
+                "mode": "preview",
                 "source": false
               }
             }
@@ -81,7 +69,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "33d555bbc578391a",
@@ -91,6 +80,18 @@
         "id": "4a7894a8ae7a7a94",
         "type": "tabs",
         "children": [
+          {
+            "id": "29604c13f9af3a6b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Design & Analysis of Algorithms/Textbook/Part 2. Loop invariants.md",
+                "mode": "preview",
+                "source": false
+              }
+            }
+          },
           {
             "id": "a38f10a5d5e19e23",
             "type": "leaf",
@@ -165,12 +166,11 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 607.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -185,12 +185,12 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "29604c13f9af3a6b",
+  "active": "10fce261b61386ed",
   "lastOpenFiles": [
-    "Design & Analysis of Algorithms/Textbook/Part 1. Foundation (Exercise).md",
+    "Design & Analysis of Algorithms/Textbook/Part 2. Loop invariants.md",
     "Design & Analysis of Algorithms/Textbook/Part 2. Getting started (Exercise).md",
     "tes.md",
-    "Design & Analysis of Algorithms/Textbook/Part 2. Loop invariants.md",
+    "Design & Analysis of Algorithms/Textbook/Part 1. Foundation (Exercise).md",
     "Design & Analysis of Algorithms/Week 1/Exercise 1 (Past).md",
     "Theory of Language & Automata/Week 1/Pengantar.md",
     "Design & Analysis of Algorithms/Week 1/What are algorithms?.md",

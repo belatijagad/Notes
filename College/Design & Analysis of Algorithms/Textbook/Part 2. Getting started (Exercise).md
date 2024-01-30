@@ -112,20 +112,21 @@ $$P(x)=\sum^{n}_{k=0}{a_kx^k}=a_0+a_1x+a_2x^2+\dots+a_nx^n$$
 and you want to evaluate this polynomial for a given value of $x$. Horner's rule says to evaluate the polynomial according to this parenthesization:
 
 $$
-P(x)=a_0+x\Big(a_1+x\big(a_2+\dots+x(a_n-1+xa_n)\big)\Big)
+P(x)=a_0+x\Big(a_1+x\big(a_2+\dots+x(a_{n-1}+xa_n)\dots\big)\Big)
 $$
 
 The procedure `Horner` implements Horner's rule to evaluate $P(x)$, given the coefficients $a_0,a_1,a_2,\dots,a_n$ in an array $A[0:n]$ and the value of $x$.
 
 ```pseudo
 \begin{algorithm}
-\caption{HornersRule}
+\caption{Horner}
 \begin{algorithmic}
-\Procedure{HornersRule}{$a$}
+\Procedure{Horner}{$A,n,x$}
 	\State $p=0$
 	\For{$i\gets n$ $\textbf{downto}$ $0$}
-		\State $p=A[i]+xp$
+		\State $p=A[i]+x\cdot p$
 	\EndFor
+	\Return p
 \EndProcedure
 \end{algorithmic}
 \end{algorithm}
@@ -143,6 +144,37 @@ p=\sum^{n-(i+1)}_{k=0}{A[k+i+1]\cdot x^k}
 $$
 
 Interpret a summation with no terms as equaling 0. Following the structure of the loop-invariant proof presented in this chapter, use this loop invariant to show that, at termination, $p=\sum^{n}_{k=0}{A[k]\cdot x^k}$.
+
+**Solution to C**.
+
+**Initialization**. Show that the loop invariant holds before the first loop iteration, when $i=n$. It is trivial that that the summation has no terms which implies $p=0$.
+
+**Maintenance**. From the loop invariant, for any arbitrary $0\leq i<n$, at the start of the $i$-th iteration of the **For** loop of lines 2-3, $p=\sum^{n-(i+1)}_{k=0}{A[k+i+1]\cdot x^k}$. After $i$-th iteration, as we iterate from $n$ **downto** $0$, we will have $i=i-1$. So to prove the maintenance of the loop invariant, we'll need to show that after the $i$-th iteration, this equation holds:
+
+$$
+p=\sum^{n-((i-1)+1)}_{k=0}{A[k+(i-1)+1]\cdot x^k}=\sum^{n-i}_{k=0}{A[k+i]\cdot x^k}
+$$
+
+which can be shown by the following
+
+$$\begin{align}
+p' &= A[i]+x\cdot p\\
+&= A[i]+x\cdot\sum^{n-(i+1)}_{k=0}{A[k+i+1]\cdot x^k}\\
+&= A[i]+\sum^{n-(i+1)}_{k=0}{A[k+i+1]\cdot x^{k+1}}\\
+&= A[i]x^0+A[i+1]x^1+A[i+2]x^2+\dots+A[n]x^{n-1}\\
+&= \sum^{n-i}_{k=0}A[k+i]x^k
+\end{align}$$
+
+
+**Termination**. When the loop terminates, $n=0 \rightarrow i=-1$, which results in:
+
+$$\begin{align}
+p &= \sum^{n-(i+1)}_{k=0}A[k+i+1]x^k\\
+&= \sum^{n-(-1+1)}_{k=0}A[k-1+1]x^k\\
+&= \sum^{n}_{k=0}A[k]x^k
+\end{align}$$
+
+Which is precisely what we want to calculate.
 
 **Problem 4**. *Inversions*
 
