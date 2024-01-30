@@ -51,7 +51,8 @@ $$\begin{align}
 
 By solving the equation $\lg{100}+2\lg{n}-n=0$, the value $n\approx0.10365$ or $n\approx14.32472$ will be get. Because of it, $n$ must satisfy $0.10365<n<14.32472$ or simply $n<14.32472$ in order for algorithm A to outperform algorithm on the same machine.
 
-**Problem 4**. For each function $f(n)$ and time $t$ in the following table, determine the largest size $n$ of a problem that can be solved in time $t$, assuming that the algorithm to solve the problem takes $f(n)$ microseconds.
+## 1. Review
+**Problem 1**. For each function $f(n)$ and time $t$ in the following table, determine the largest size $n$ of a problem that can be solved in time $t$, assuming that the algorithm to solve the problem takes $f(n)$ microseconds.
 
 |            | second | minute | hour | day | month | year | century |
 |:----------:|:------:| ------ | ---- | --- | ----- | ---- | ------- |
